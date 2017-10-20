@@ -11,8 +11,9 @@ export default class Entity {
             (Math.random() * 100000000 | 0).toString(16) +
             Entity.count;
 
-        Entity.count++;
+        this.name = name || "";
 
+        Entity.count++;
         return this;
     }
 
